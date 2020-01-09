@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.table-fixed tbody {
+  height: 300px;
+  overflow-y: auto;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table-fixed thead,
+.table-fixed tbody,
+.table-fixed tr,
+.table-fixed td,
+.table-fixed th {
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.table-fixed tbody td,
+.table-fixed tbody th,
+.table-fixed thead > tr > th {
+  float: left;
+  position: relative;
+
+  &::after {
+      content: '';
+      clear: both;
+      display: block;
   }
 }
-
-.App-header {
-  background-color: #282c34;
+body {
+  background: #8b8b8f;
+  background: -webkit-linear-gradient(to right, #c4adf0, #ACB6E5);
+  background: linear-gradient(to right, #deff82, #ACB6E5);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.citybutton{
+  margin-left: 25em;
+  padding: 10px;
+  margin-bottom:1em;
+  background-color: #0c39b6;
+  font-weight: bolder;
+  text-decoration-color:  #37dd0d ;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: aqua;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.map{
+  position: relative;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding: 1px;
+
+}
+
+.list{
+ background-color: aliceblue;
+}
+
+.headertext{
+  color:  #129fd6;font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;
+
+}
+
+.jumbotron{
+  background-color:  #fdfeff;
 }
